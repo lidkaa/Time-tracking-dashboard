@@ -1,0 +1,290 @@
+  .attribution { font-size: 11px; text-align: center; }
+  .attribution a { color: hsl(228, 45%, 44%); }
+
+   body {
+    background-color: hsl(226, 43%, 10%);
+    color: white;
+    font-family: Rubik;
+    font-size: 18px;
+  }
+
+  .textSmall {
+    font-size: 15px;
+    font-weight: 300;
+    color:hsl(246, 57%, 77%);
+  }
+
+  .textBig {
+    font-size: 50px;
+    font-weight: 300;
+  }
+
+  .textLarge {
+    font-size: 70px;
+    font-weight: 300;
+  }
+
+  .outerContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 95vh;
+  }
+
+  .innerContainer {
+    display: flex;
+    width: 1260px;
+    height: 620px;
+    gap: 20px;
+  }
+
+  .mainBoxContainer {
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    width: 300px;
+    height: 100%;
+    background-color: hsl(235, 46%, 20%);
+  }
+
+  .smallBoxContainer {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 940px;
+    gap: 20px;
+  }
+
+  .smallBox {
+    display: flex;
+    align-items: end;
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-position-x: 95%;
+    background-position-y: -3px;
+  }
+
+  .smallInnerBox {
+    background-color: hsl(235, 46%, 20%);
+    width: 300px;
+    height: 240px;
+  }
+
+  .smallInnerBox:hover {
+    background-color: hsl(236, 34%, 41%);
+  }
+
+  .activityMenu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px;
+    margin-top: 15px;
+  }
+
+  .menu {
+    background-image: url(./images/icon-three-dots.svg);
+    background-position: center;
+    width: 20px;
+    height: 20px;
+    filter: invert(100%) opacity(60%);
+  }
+
+  .menu:hover {
+      filter: invert(100%) opacity(100%);
+      cursor: pointer
+  }
+
+  .smallInnerBox p {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .currentTime, .previousTime {
+    display: flex;
+    margin: 10px 0 0 25px;
+  }
+
+  .nameBox {
+    background-color: hsl(246,79%,59%) ;
+    width: 100%;
+    height: 80%;
+  }
+
+  .textReport {
+    margin: 40px 0 0 15px;
+  }
+
+  .textName {
+    margin-left: 15px;
+  }
+
+  .userImage {
+    width: 100px;
+    height: 100px;
+    border: 3px solid white;
+    border-radius: 50%;
+    margin: 30px 0 0 30px;
+  }
+
+  .timeFramesMenu {
+    list-style-type: none;
+  }
+
+  .timeFramesMenu li {
+    padding: 15px 0 15px 0;
+    cursor: pointer;
+  }
+  
+  .timeFramesMenu li:hover {
+    color: white;
+  }
+
+  .icon {
+    width: 160px;
+    height: 160px;
+  }
+
+  .boxRound {
+    border-radius: 15px;
+  }
+
+  /* ----------------- media query ----------------- */
+
+  @media screen and (max-width: 1300px) {
+    ul {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .textBig {
+      font-size: 30px;
+      font-weight: 300;
+    }
+
+    .textLarge {
+      font-size: 40px;
+      font-weight: 300;
+    }
+
+    .outerContainer {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      margin-top: 50px;
+    }
+
+    .innerContainer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 1260px;
+      height: 100%;
+      margin-bottom: 20px;
+    }
+
+    .mainBoxContainer {
+      width: 380px;
+      height: 250px;
+    }
+
+    .smallBoxContainer {
+      flex-direction: column;
+    }
+
+    .smallBox {
+      width: 380px;
+      height: 160px;
+    }
+
+    .smallInnerBox {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      height: 130px;
+    }
+
+    .smallInnerBox p {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .activityMenu {
+      flex: 1 0 70%;
+      margin: 0;
+      padding: 10px 15px 0 15px;
+    }
+
+    .currentTime {
+      flex: 1 0 30%;
+      align-self: center;
+      margin: 0;
+      padding-left: 15px;
+      font-size: 35px;
+    }
+
+    .previousTime {
+      flex: 1 0 30%;
+      align-self: center;
+      justify-content: flex-end;
+      margin: 0;
+      padding-right: 15px;
+      font-size: 18px;
+    }
+
+    .nameBox {
+      display: flex;
+      flex-wrap: wrap;
+      height: 70%;
+    }
+
+    .textBox {
+      display: flex;
+      flex-direction: column;
+      flex: 1 0 50%;
+      justify-content: center;
+      align-items: flex-start;
+    }
+
+    .textName {
+      display: flex;
+      margin: 0;
+    }
+
+    .surname {
+      margin-left: 10px;
+    }
+
+    .textReport {
+      margin: 0;
+    }
+
+    .textName {
+      margin-top: 0;
+    }
+
+    .userImageBox {
+      display: flex;
+      flex: 1 0 15%;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+    }
+
+    .userImage {
+      width: 70px;
+      height: 70px;
+      margin: 0;
+    }
+
+    .timeFramesMenu {
+      margin: 15px;
+      padding: 15px;
+    }
+
+    .timeFramesMenu li {
+      padding: 0;
+    }
+  }
